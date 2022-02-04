@@ -47,6 +47,7 @@ header .showTime {
 .mainbox .column:nth-child(2) {
   flex: 5;
   margin: 0 0.125rem 0.1875rem;
+  overflow: hidden;
 }
 .mainbox .panel {
   position: relative;
@@ -111,7 +112,6 @@ header .showTime {
 }
 .mainbox .panel .chart {
   height: 3rem;
-  background-color: cadetblue;
 }
 .no {
   background: rgba(101, 132, 226, 0.1);
@@ -171,4 +171,66 @@ header .showTime {
   height: 0.5rem;
   line-height: 0.5rem;
   padding-top: 0.1rem;
+}
+.map {
+  position: relative;
+  height: 10.125rem;
+}
+.map .map1 {
+  width: 6.475rem;
+  height: 6.475rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: url(../images/map.png) no-repeat center;
+  background-size: contain;
+  opacity: 0.3;
+}
+.map .map2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 8.0375rem;
+  height: 8.0375rem;
+  background: url(../images/lbx.png) no-repeat center;
+  background-size: contain;
+  animation: rotate1 15s linear infinite;
+  opacity: 0.6;
+}
+@keyframes rotate1 {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}
+.map .map3 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 7.075rem;
+  height: 7.075rem;
+  background: url(../images/jt.png);
+  background-size: contain;
+  animation: rotate2 15s linear infinite;
+  opacity: 0.3;
+}
+@keyframes rotate2 {
+  from {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  to {
+    transform: translate(-50%, -50%) rotate(-360deg);
+  }
+}
+.map .chart {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 10.125rem;
 }
