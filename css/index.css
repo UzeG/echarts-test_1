@@ -110,6 +110,11 @@ header .showTime {
   text-align: center;
   font-size: 0.25rem;
 }
+.mainbox .panel h2 a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 0.125rem;
+}
 .mainbox .panel .chart {
   height: 3rem;
 }
